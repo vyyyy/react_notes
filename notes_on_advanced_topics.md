@@ -10,7 +10,7 @@ React renders user interfaces in two phases.
   - At the first render (new build), react executes all components to return a JSX tree as a result.
   - At subsequent renders (updates), react compares the previous and updated JSX trees to compute the diff of a JSX tree and returns this as a result. This is called reconciliation.
 - Phase 2: Commit Phase
-  - React will update the DOM with this JSX tree. For example, I added a new <h1 /> tag and in the rerender, react inserts the new JSX element into the DOM using the code document.createElement("h1");
+  - React will update the DOM with this JSX tree. For example, I added a new h1 tag and in the rerender, react inserts the new JSX element into the DOM using the createElement method as follows: document.createElement("h1");
 
 ## State
 
